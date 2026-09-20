@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Writemygrants | Book a Free Grant Consultation</title>
+<meta name="description" content="Ready to pursue grant funding? Contact Writemygrants to book a free consultation and learn how our grant writing and funding strategy services can help you win awards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <img class="mark" src="assets/writemygrants-logo-uploaded.png" alt="Writemygrants logo">
+      Writemygrants
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#form" class="btn btn-primary btn-sm">Free Consultation</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Contact &amp; Consultation</span>
+      <h1>Let's talk about what you're trying to fund.</h1>
+      <p class="lede">Book a free, 20-minute consultation. We'll talk through your challenges, expectations, realistic grant opportunities, and give you an honest read on next steps.</p>
+    </div>
+  </section>
+
+  <section class="section" id="form">
+    <div class="wrap contact-grid">
+
+      <!--
+        FORMSPREE SETUP — do this before the form will work:
+        1. Create a free account at https://formspree.io and add a new form.
+        2. Formspree gives you an endpoint like https://formspree.io/f/abcd1234
+        3. Replace YOUR_FORM_ID below (in the form's action attribute) with that ID.
+        That's the only change needed — the JS at the bottom of this page handles the rest.
+      -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div>
+            <label for="fname">First name</label>
+            <input id="fname" name="First name" type="text" required>
+          </div>
+          <div>
+            <label for="lname">Last name</label>
+            <input id="lname" name="Last name" type="text" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="email">Email address</label>
+            <input id="email" name="Email" type="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="Phone" type="tel">
+          </div>
+        </div>
+        <div>
+          <label for="org">Organisation name</label>
+          <input id="org" name="Organisation" type="text">
+        </div>
+        <div>
+          <label for="type">Organisation type</label>
+          <select id="type" name="Organisation type">
+            <option>Nonprofit</option>
+            <option>Small business</option>
+            <option>Startup / accelerator</option>
+            <option>Community organisation</option>
+            <option>Educational institution</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="need">What are you hoping to fund?</label>
+          <textarea id="need" name="What are you hoping to fund" placeholder="Tell us about your program, project, or funding goal — the more detail, the more useful the consultation."></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-accent" id="contactSubmit">Book My Free Consultation</button>
+        </div>
+        <p class="form-note" id="formNote">We typically reply within one business day. Your information is never shared or sold.</p>
+      </form>
+
+      <aside class="contact-side">
+        <div class="panel">
+          <h4>Book a call directly</h4>
+          <p>Prefer to skip the form? Email us directly and we'll send available consultation times.</p>
+          <p><a href="mailto:hello@writemygrants.com">hello@writemygrants.com</a></p>
+        </div>
+        <div class="panel">
+          <h4>What happens next</h4>
+          <p>1. We review what you share and do a quick eligibility scan.</p>
+          <p>2. We hold a free 20-minute call to talk through options.</p>
+          <p>3. You get a straightforward recommendation — with or without us.</p>
+        </div>
+        <div class="panel">
+          <h4>Who this is for</h4>
+          <p>Nonprofits, small businesses, startups, accelerators, community organisations, and educational institutions actively pursuing grant funding.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section-tight" style="border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow center">Frequently asked questions</span>
+        <h2>Common questions about working with a grant consultant.</h2>
+      </div>
+      <div class="faq" id="faq">
+
+        <div class="faq-item open">
+          <button class="faq-q">What types of organisations do you work with?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Writemygrants works with nonprofits, small businesses, startups, accelerators, community organisations, and educational institutions. If you're pursuing grant funding and need help with research, writing, or strategy, we're likely a fit — ask us during your free consultation.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">How much do your grant writing services cost?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Pricing depends on project scope — a single proposal is priced differently than an ongoing funding strategy retainer. We'll give you a clear, itemized quote after understanding your goals during the free consultation, with no hidden fees.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">Do you guarantee that we'll win the grant?<span class="plus">+</span></button>
+          <div class="faq-a"><p>No ethical grant consultant can guarantee an award — funding decisions are ultimately made by the funder. What we do guarantee is a professionally researched, strategically written, fully compliant application that gives you the strongest realistic chance of success.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">How long does the grant writing process take?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Most full proposals take three to six weeks from kickoff to submission, depending on complexity and funder deadlines. Grant application reviews and shorter engagements can move faster — we'll map out a realistic timeline once we know the opportunity.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">What information do you need from me to get started?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Generally: an overview of your work, past application outcome(s), existing budgets, and any grants you're already considering. We'll send a simple intake checklist after your consultation so nothing gets missed.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">Do you work with organisations outside my region?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes — as a freelance grant consultant, Writemygrants works remotely with clients across the country. Location only matters for grants that are geographically restricted, which we'll flag during research.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <svg class="cta-wreath" viewBox="0 0 320 320" fill="none">
+      <path d="M160 250 C 118 240, 90 210, 80 170" stroke="var(--olive)" stroke-width="2" fill="none"/>
+      <path d="M160 250 C 202 240, 230 210, 240 170" stroke="var(--olive)" stroke-width="2" fill="none"/>
+      <circle cx="160" cy="160" r="150" stroke="var(--olive)" stroke-width="1"/>
+    </svg>
+    <div class="wrap inner">
+      <span class="eyebrow center">Still deciding?</span>
+      <h2>There's no cost or obligation to talk it through.</h2>
+      <p>The free consultation exists to answer exactly this question honestly — before you spend anything.</p>
+      <div class="actions center">
+        <a href="#form" class="btn btn-accent">Book Your Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img class="mark" src="assets/writemygrants-logo-uploaded.png" alt="Writemygrants logo">
+          Writemygrants
+        </div>
+        <p>Freelance grant writing, research, and funding strategy for organisations doing work worth funding.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Grant Research</a>
+        <a href="services.html">Grant Writing</a>
+        <a href="services.html">Funding Strategy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="legal.html">Legal Notices</a>
+        <a href="data-management.html">Data Management</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@writemygrants.com">hello@writemygrants.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Writemygrants</span>
+      <span>Grant Writing Services · Grant Consultant · Grant Research · Funding Strategy</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item .faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+      if(!wasOpen){ item.classList.add('open'); }
+    });
+  });
+
+  // Contact form — submits to Formspree without leaving the page.
+  var contactForm = document.getElementById('contactForm');
+  var formNote = document.getElementById('formNote');
+  var submitBtn = document.getElementById('contactSubmit');
+  var defaultNote = formNote.textContent;
+
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(contactForm.action.indexOf('YOUR_FORM_ID') !== -1){
+      formNote.textContent = 'Form not yet connected — add your Formspree form ID in contact.html.';
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    formNote.textContent = defaultNote;
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response){
+      if(response.ok){
+        contactForm.reset();
+        submitBtn.textContent = 'Message sent';
+        formNote.textContent = "Thanks — we've received your message and typically reply within one business day.";
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Book My Free Consultation';
+        formNote.textContent = 'Something went wrong sending that. Please try again or email hello@writemygrants.com directly.';
+      }
+    }).catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Book My Free Consultation';
+      formNote.textContent = 'Something went wrong sending that. Please try again or email hello@writemygrants.com directly.';
+    });
+  });
+</script>
+
+</body>
+</html>
