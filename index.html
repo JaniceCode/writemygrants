@@ -19,14 +19,18 @@
       Writemygrants
     </a>
     <nav class="main-nav">
+      <nav class="main-nav" id="mainNav">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary btn-sm">Free Consultation</a>
-    </div>
+  <a href="contact.html" class="btn btn-primary btn-sm">Free Consultation</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+    <span></span><span></span><span></span>
+  </button>
+</div>
   </div>
 </header>
 
@@ -207,5 +211,20 @@
   </div>
 </footer>
 
+  <script>
+  var navToggle = document.getElementById('navToggle');
+  var header = document.querySelector('header.site');
+  navToggle.addEventListener('click', function(){
+    var isOpen = header.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.querySelectorAll('#mainNav a').forEach(function(a){
+    a.addEventListener('click', function(){ header.classList.remove('nav-open'); navToggle.setAttribute('aria-expanded','false'); });
+  });
+  window.addEventListener('resize', function(){
+    if (window.innerWidth > 640) { header.classList.remove('nav-open'); navToggle.setAttribute('aria-expanded','false'); }
+  });
+</script>
+  
 </body>
 </html>
